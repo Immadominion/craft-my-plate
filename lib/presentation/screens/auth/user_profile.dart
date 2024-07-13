@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:learn/data/controllers/auth_controller.dart';
+import 'package:learn/presentation/dashboard.dart';
 
 import '../../widgets/text_field.dart';
 
@@ -88,13 +89,13 @@ class _UserProfileState extends State<UserProfile> {
                       (value) {
                         if (value) {
                           log("The name has been updated.");
+                          Navigator.of(context).push(
+                            MaterialPageRoute(
+                                builder: (context) => const HomePage()),
+                          );
                         }
                       },
                     );
-
-                    // Navigator.of(context).push(
-                    //   MaterialPageRoute(builder: (context) => const HomePage()),
-                    // );
                   },
                   child: const Text(
                     'Let\'s Start',
