@@ -1,0 +1,82 @@
+{
+  "project_info": {
+    "project_number": "976475649067",
+    "project_id": "modern-login-page",
+    "storage_bucket": "modern-login-page.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:976475649067:android:f98bd57a1decceed72266e",
+        "android_client_info": {
+          "package_name": "com.example.learn"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "976475649067-7rfbl1b9vp59rqh5cgtvvhhdemd0c4s5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC8t4LTRGETWWiMKhr454r8xeCSliVWIXY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "976475649067-7rfbl1b9vp59rqh5cgtvvhhdemd0c4s5.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "976475649067-bsg9il07lk00trs4dvi1oo18ss822pc1.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.modernLoginPage"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:976475649067:android:7060d2f2b90d330872266e",
+        "android_client_info": {
+          "package_name": "com.example.modern_login_page"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "976475649067-7rfbl1b9vp59rqh5cgtvvhhdemd0c4s5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC8t4LTRGETWWiMKhr454r8xeCSliVWIXY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "976475649067-7rfbl1b9vp59rqh5cgtvvhhdemd0c4s5.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "976475649067-bsg9il07lk00trs4dvi1oo18ss822pc1.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.modernLoginPage"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
