@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/flutter_svg.dart';
+import 'package:learn/data/controllers/auth_controller.dart';
 import 'package:learn/presentation/sections/home/services.dart';
 import 'package:learn/presentation/sections/home/starters.dart';
 import 'package:learn/presentation/widgets/home/default_menu_container.dart';
@@ -35,7 +36,13 @@ class _HomeScreenState extends State<HomeScreen> {
               children: [
                 Column(
                   children: [
-                    const HomeHeading(),
+                    HomeHeading(
+                      userName: ref
+                              .read(authController.notifier)
+                              .currentUser
+                              ?.displayName ??
+                          "",
+                    ),
                     SizedBox(
                       width: MediaQuery.of(context).size.width,
                       height: 130.sp,

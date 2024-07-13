@@ -3,8 +3,10 @@ import 'package:iconsax_flutter/iconsax_flutter.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class HomeHeading extends StatelessWidget {
+  final String userName;
   const HomeHeading({
     super.key,
+    this.userName = "User",
   });
 
   @override
@@ -15,7 +17,7 @@ class HomeHeading extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Text(
-            "Hi Monica!",
+            "Hi ${userName.isNotEmpty ? userName : "Fren"}!",
             textAlign: TextAlign.center,
             style: TextStyle(
               fontFamily: "Lex",
@@ -48,8 +50,7 @@ class HomeHeading extends StatelessWidget {
                       Icon(
                         Iconsax.location_copy,
                         size: 16.sp,
-                        color:
-                            Theme.of(context).colorScheme.primary,
+                        color: Theme.of(context).colorScheme.primary,
                       ),
                       SizedBox(
                         width: 2.sp,
@@ -81,8 +82,7 @@ class HomeHeading extends StatelessWidget {
                       fontFamily: "Lex",
                       fontSize: 10.sp,
                       fontWeight: FontWeight.w300,
-                      color:
-                          Theme.of(context).colorScheme.onSurface,
+                      color: Theme.of(context).colorScheme.onSurface,
                     ),
                   ),
                 ],
