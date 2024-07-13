@@ -133,7 +133,7 @@ class _AuthScreenState extends State<AuthScreen> {
                     ),
                   ),
                   onPressed: () async {
-                    formKey.currentState?.validate();
+                    // formKey.currentState?.validate();
                     log("Number for verification >> $phone");
                     await FirebaseAuth.instance.verifyPhoneNumber(
                       phoneNumber: phone,
@@ -144,6 +144,9 @@ class _AuthScreenState extends State<AuthScreen> {
                       verificationFailed: (FirebaseAuthException e) {
                         if (e.code == 'invalid-phone-number') {
                           log('The provided phone number is not valid.');
+                        } else {
+                          log("Error is >> ${e.code}");
+                          log("Situation:: ${e}");
                         }
                       },
                       codeSent:
@@ -151,6 +154,7 @@ class _AuthScreenState extends State<AuthScreen> {
                         _navigateToVerifyCode(verificationId);
                       },
                       codeAutoRetrievalTimeout: (String verificationId) {},
+                      timeout: const Duration(seconds: 60),
                     );
                   },
                   child: const Text(
